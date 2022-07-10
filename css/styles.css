@@ -1,0 +1,259 @@
+/* font-family: 'Source Code Pro', monospace; */
+
+/* Shades & Variations of Anthracite */
+/*
+#A9B5D4
+#767F94
+#434854 - Used for footer background color
+#292C33 - Used for body background color
+*/
+
+/* Complementary Colors to Anthracite */
+/*
+#687494 - Used for h1 title heading
+#858994 - used for <a> link text, <p> paragraph text
+#948359 - used for navbar text, subtitle text, footer text
+#5D5238 - used for navbar hover text
+*/
+
+body {
+  background-color: #292C33;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  text-align: center;
+
+}
+
+h1 {
+  color: #687494;
+}
+
+h2 {
+  color: #858994;
+}
+
+a {
+  color: #858994;
+}
+
+p {
+  color: #858994;
+}
+
+/*******     Navbar Section CSS CLasses      *******/
+
+.fs-4 {
+  color: #687494;
+}
+
+.nav-link {
+  color: #948359;
+}
+
+.nav-link:hover {
+  color: #5D5238;
+}
+
+/*******     Divider CSS CLasses      *******/
+
+.divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+/*******     Transition Animation CSS CLasses      *******/
+
+.revealY{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealY.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealX{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealX.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*******     Intro Section CSS CLasses      *******/
+
+.heading-title {
+  line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+.typewriter {
+  margin-top: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: justify;
+}
+
+.typewriter-text {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #858994; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 2.0s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #858994 }
+}
+
+/*******     Skills Section CSS CLasses      *******/
+
+.skills-container {
+  margin: 50px;
+}
+
+.skill-header {
+  margin-bottom: 50px;
+}
+
+.icon-grid {
+  margin-top: 25px;
+  padding: 10px;
+  width: 50%;
+  border: var(--bs-border-width) var(--bs-border-style) #434854!important;
+  border-radius: 8px;
+}
+
+.skill-icon {
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+}
+
+/*** Frontend Icon CSS Classes  ***/
+
+.bootstrap-icon {
+  fill: #6610f2;
+}
+
+.css-icon {
+  fill: #2965f1;
+}
+
+.html-icon {
+  fill: #f06529;
+}
+
+.jquery-icon {
+  fill: #0769ad;
+}
+
+.js-icon {
+  fill: #f0db4f;
+}
+
+.react-icon {
+  fill: #61dafb;
+}
+
+/*** Backend Icon CSS Classes  ***/
+
+.node-icon {
+  fill: #3c873a;
+}
+
+.auth-icon {
+  fill: #8B888F;
+}
+
+/*** Resource Icon CSS Classes  ***/
+
+.npm-icon {
+  fill: #cb3837;
+}
+
+.git-icon {
+  fill: #f34f29;
+}
+
+/*******     Project Section CSS CLasses      *******/
+
+.project-container {
+  margin: 50px;
+}
+
+.project-header {
+  margin-bottom: 100px;
+}
+
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) #434854!important;
+}
+
+.project-text {
+  text-align: justify;
+}
+
+.subtitle {
+  color: #948359;
+}
+
+/*******     Contact Section CSS CLasses      *******/
+
+.contact-container {
+  margin: 50px;
+}
+
+.contact-header {
+  margin-bottom: 50px;
+}
+
+.contact-text {
+  margin: 32px 32px;
+}
+
+/*******     Links Section CSS CLasses      *******/
+
+.links-container {
+  background-color: #434854;
+  padding: 20px 0 10px 0;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #948359;
+}
+
+.footer-icon:hover {
+  color: #5D5238;
+}
+
+.copyright-text {
+  color: #948359;
+  margin: 10px;
+}
